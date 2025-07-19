@@ -13,7 +13,7 @@ import connectToDatabase from './db/db.js'
 connectToDatabase() 
 const app = express() 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://factory-flow-app-urnr.vercel.app/',
   credentials: true, // si tu utilises les cookies ou des headers comme Authorization
 }));
 app.options('*', cors()); // ✅ gère les preflight OPTIONS pour toutes les routes

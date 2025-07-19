@@ -12,8 +12,11 @@ const userRegister = async () => {
             password: hashPassword,
             role: "admin"
         })
-        await newUser.save()
-        console.log("Admin crée")
+        if(!newUser) {
+            await newUser.save()
+            console.log("Admin crée")
+        }
+        console.log("Admin existant")
     } catch(error) {
         console.log(error)
     }
