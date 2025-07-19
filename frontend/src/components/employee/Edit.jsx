@@ -27,7 +27,7 @@ const Edit = () => {
     const fetchEmployee = async () => {
       try {
         const responnse = await axios.get(
-          `http://localhost:8000/api/employee/${id}`,
+          `https://factory-flow-app-weld.vercel.app/api/employee/${id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

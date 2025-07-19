@@ -38,7 +38,7 @@ const Add = () => {
 
     try {
       const response = await axios.post(
-        `http://localhost:8000/api/salary/add`,
+        `https://factory-flow-app-weld.vercel.app/api/salary/add`,
         salary,
         {
           headers: {

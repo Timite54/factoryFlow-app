@@ -39,7 +39,7 @@ export const columns = [
 export const fetchDepartments = async () => {
   let departments;
   try {
-    const responnse = await axios.get("http://localhost:8000/api/department", {
+    const responnse = await axios.get("https://factory-flow-app-weld.vercel.app/api/department", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },

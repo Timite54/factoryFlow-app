@@ -12,7 +12,7 @@ const View = () => {
 
   const fetchSalareis = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/api/salary/${id}/${user.role}`, {
+      const response = await axios.get(`https://factory-flow-app-weld.vercel.app/api/salary/${id}/${user.role}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

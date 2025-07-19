@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -22,7 +22,7 @@ const Add = () => {
 
     try {
         const response = await axios.post(
-          `http://localhost:8000/api/leave/add`,leave,
+          `https://factory-flow-app-weld.vercel.app//api/leave/add`,leave,
           {
             headers: {
               "Authorization": `Bearer ${localStorage.getItem("token")}`,

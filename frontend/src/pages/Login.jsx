@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/auth/login",
+        "https://factory-flow-app-weld.vercel.app/api/auth/login",
           { email, password },
           { withCredentials: true } // ✅ ajoute ça
       );
