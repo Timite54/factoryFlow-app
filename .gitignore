@@ -4,3 +4,5 @@ build/
 dist/
 *.log
 .idea
+.DS_tore
+.vscode
